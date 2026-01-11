@@ -1786,7 +1786,7 @@ class GoogleLLM():
                      "1. Read the full text, then answer every question in order (Q1, Q2, ...). \n" \
                      "2. For each question, consider ONLY the mention marked with that question tag (e.g., [Q1]) and ONLY the options listed immediately after that question. Do NOT reuse options from other questions.\n" \
                      "3. Choose the option that best matches the mention given the context. Prefer contextual relevance over surface-form match when they conflict. Prefer the most specific, contextually accurate entry when multiple options fit.\n" \
-                     "4. If no option matches, choose '0' (None of the above).\n" \
+                     "4. If no option matches, choose '0' (None of the below).\n" \
                      "5. Sometimes, the answer numbering may not be continuous. Carefully look at the answer number of your selected option and provide it.\n" \
                      "6. Output format: exactly N lines for N questions. Each line must contain exactly one digit (the chosen option number). The first line is the answer for Q1, the second for Q2, etc. No other characters, labels, punctuation, or explanation. No blank lines.\n" \
                      "7. Do NOT provide chain-of-thought or any additional text.\n"
